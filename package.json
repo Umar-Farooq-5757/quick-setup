@@ -1,0 +1,33 @@
+{
+  "name": "quick-setup",
+  "version": "0.0.1",
+  "description": "A CLI tool to help you setup your project",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
+  "bin": {
+    "quick-setup": "bin/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc && chmod +x bin/index.js",
+    "start": "node bin/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Umar Farooq",
+  "license": "ISC",
+  "type": "module",
+  "files": [
+    "bin"
+  ],
+  "dependencies": {
+    "commander": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/treeify": "^1.0.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
